@@ -1,0 +1,40 @@
+Failed to resolve dependency: react, present in 'optimizeDeps.include'
+Failed to resolve dependency: react-dom, present in 'optimizeDeps.include'
+Failed to resolve dependency: react/jsx-dev-runtime, present in 'optimizeDeps.include'
+Failed to resolve dependency: react/jsx-runtime, present in 'optimizeDeps.include'
+Error:   Failed to scan for dependencies from entries:
+  C:/Users/zeynepkaya/Documents/Codex/2026-10-10/s/frontend/src/main.jsx
+
+  [31mX [41;31m[[41;97mERROR[41;31m][0m [1mEPERM: operation not permitted, realpath 'C:\Users\zeynepkaya\Documents\Codex\2026-10-10\s\frontend\src\main.jsx'[0m [1m[35m[plugin vite:dep-scan][0m
+
+    <stdin>:1:7:
+[37m      1 │ import [32m"C:/Users/zeynepkaya/Documents/Codex/2026-10-10/s/frontend/s[37m...
+        ╵        [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  This error came from the "onResolve" callback registered here:
+
+    node_modules/esbuild/lib/main.js:1150:20:
+[37m      1150 │       let promise = [32m[37msetup({
+           ╵                     [32m^[0m
+
+    at setup (file:///C:/Users/zeynepkaya/Documents/Codex/2026-10-10/s/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49844:13)
+    at handlePlugins (C:\Users\zeynepkaya\Documents\Codex\2026-10-10\s\frontend\node_modules\esbuild\lib\main.js:1150:21)
+    at buildOrContextImpl (C:\Users\zeynepkaya\Documents\Codex\2026-10-10\s\frontend\node_modules\esbuild\lib\main.js:873:5)
+    at Object.buildOrContext (C:\Users\zeynepkaya\Documents\Codex\2026-10-10\s\frontend\node_modules\esbuild\lib\main.js:699:5)
+    at C:\Users\zeynepkaya\Documents\Codex\2026-10-10\s\frontend\node_modules\esbuild\lib\main.js:2032:68
+    at new Promise (<anonymous>)
+    at Object.context (C:\Users\zeynepkaya\Documents\Codex\2026-10-10\s\frontend\node_modules\esbuild\lib\main.js:2032:27)
+    at Object.context (C:\Users\zeynepkaya\Documents\Codex\2026-10-10\s\frontend\node_modules\esbuild\lib\main.js:1874:58)
+    at prepareEsbuildScanner (file:///C:/Users/zeynepkaya/Documents/Codex/2026-10-10/s/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49576:24)
+
+
+    at failureErrorWithLog (C:\Users\zeynepkaya\Documents\Codex\2026-10-10\s\frontend\node_modules\esbuild\lib\main.js:1472:15)
+    at C:\Users\zeynepkaya\Documents\Codex\2026-10-10\s\frontend\node_modules\esbuild\lib\main.js:945:25
+    at runOnEndCallbacks (C:\Users\zeynepkaya\Documents\Codex\2026-10-10\s\frontend\node_modules\esbuild\lib\main.js:1315:45)
+    at buildResponseToResult (C:\Users\zeynepkaya\Documents\Codex\2026-10-10\s\frontend\node_modules\esbuild\lib\main.js:943:7)
+    at C:\Users\zeynepkaya\Documents\Codex\2026-10-10\s\frontend\node_modules\esbuild\lib\main.js:955:9
+    at new Promise (<anonymous>)
+    at requestCallbacks.on-end (C:\Users\zeynepkaya\Documents\Codex\2026-10-10\s\frontend\node_modules\esbuild\lib\main.js:954:54)
+    at handleRequest (C:\Users\zeynepkaya\Documents\Codex\2026-10-10\s\frontend\node_modules\esbuild\lib\main.js:647:17)
+    at handleIncomingPacket (C:\Users\zeynepkaya\Documents\Codex\2026-10-10\s\frontend\node_modules\esbuild\lib\main.js:672:7)
+    at Socket.readFromStdout (C:\Users\zeynepkaya\Documents\Codex\2026-10-10\s\frontend\node_modules\esbuild\lib\main.js:600:7)
